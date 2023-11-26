@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity"
+    android:background="@drawable/img_1">
+
+    <!-- view for AdMob Interstitial Ad -->
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.7"
+        android:background="#03A9F4"
+        android:elegantTextHeight="true"
+        android:fontFamily="casual"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="Minha Lista de Compras"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/next_level_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/aclonica"
+        android:insetBottom="9dp"
+        android:text="Adicionar Produtos"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:autoText="false"
+        android:elegantTextHeight="true"
+        android:fontFamily="casual"
+        android:freezesText="false"
+        android:text="Alimente o seu corpo com amor e respeito, escolhendo alimentos que o nutrem e o fazem prosperar."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

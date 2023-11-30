@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:alpha="0.7"
-        android:background="#03A9F4"
+        android:background="#04B2FF"
         android:elegantTextHeight="true"
         android:fontFamily="casual"
         android:freezesText="false"
@@ -25,23 +25,11 @@
         android:textColor="#FFFFFF"
         android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/next_level_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/aclonica"
-        android:insetBottom="9dp"
-        android:text="Adicionar Produtos"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="381dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:autoText="false"
         android:elegantTextHeight="true"
         android:fontFamily="casual"
         android:freezesText="false"
@@ -51,5 +39,17 @@
         android:textIsSelectable="false"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_level_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:background="#093889"
+        android:fontFamily="@font/aclonica"
+        android:insetBottom="9dp"
+        android:text="Adicionar Produtos" />
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package br.com.sosthenes.orgs.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -14,6 +15,7 @@ class FormularioProdutoActivity :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         configuraBotaoSalvar()
     }
 
@@ -23,7 +25,8 @@ class FormularioProdutoActivity :
         botaoSalvar.setOnClickListener {
             val produtoNovo = criaProduto()
             dao.adiciona(produtoNovo)
-            finish()
+            val intent = Intent(this@FormularioProdutoActivity, ListaProdutosActivity::class.java)
+            startActivity(intent)
         }
     }
 

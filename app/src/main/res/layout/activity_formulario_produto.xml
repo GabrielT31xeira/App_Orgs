@@ -2,8 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.Holo.Light.ScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#04B2FF"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,45 +15,79 @@
 
         <EditText
             android:id="@+id/activity_formulario_produto_nome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
             android:hint="Nome"
             android:inputType="text"
+            android:paddingStart="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:typeface="normal"
+            app:barrierMargin="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/activity_formulario_produto_descricao"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
             android:hint="Descrição"
+            android:textColor="@color/black"
             android:inputType="text"
+            android:paddingStart="10dp"
+            android:radius="10dp"
             app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_nome"
             app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_nome"
             app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_nome" />
 
         <EditText
             android:id="@+id/activity_formulario_produto_valor"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="370dp"
+            android:textColor="@color/black"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
             android:hint="Valor"
             android:inputType="numberDecimal"
+            android:paddingStart="10dp"
+            android:radius="10dp"
             app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_descricao"
             app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_descricao"
             app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_descricao" />
 
-        <Button android:id="@+id/activity_formulario_produto_botao_salvar"
+        <Button
+            android:id="@+id/activity_formulario_produto_botao_salvar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="casual"
             android:text="Salvar"
-            app:layout_constraintVertical_bias="1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_formulario_produto_valor" />
+            app:layout_constraintTop_toBottomOf="@+id/activity_formulario_produto_valor"
+            app:layout_constraintVertical_bias="1" />
+
+        <LinearLayout
+            android:id="@+id/seuLinearLayout"
+            android:layout_width="314dp"
+            android:layout_height="454dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/img_2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_formulario_produto_valor"></LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

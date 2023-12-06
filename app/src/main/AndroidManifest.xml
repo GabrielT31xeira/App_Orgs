@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.sosthenes.orgs">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Include required permissions for Google Mobile Ads to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,10 +30,16 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent" />
-        <activity android:name=".ui.activity.FormularioProdutoActivity" />
+        <activity
+            android:name=".ui.activity.FormularioProdutoActivity"
+            android:theme="@style/Theme.MaterialComponents"/>
+        <activity
+            android:name=".ui.activity.ListaProdutosActivity"
+            android:theme="@style/Theme.MaterialComponents"/>
         <activity
             android:name=".ui.activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

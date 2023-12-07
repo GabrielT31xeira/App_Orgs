@@ -8,10 +8,9 @@
 
     <TextView
         android:id="@+id/app_title"
-        android:layout_width="414dp"
-        android:layout_height="732dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:alpha="0.7"
         android:background="#04B2FF"
         android:elegantTextHeight="true"
         android:fontFamily="casual"
@@ -22,17 +21,19 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/activity_lista_produtos_recyclerView"
-        android:layout_width="415dp"
-        android:layout_height="727dp"
+        android:layout_width="393dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="230dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
